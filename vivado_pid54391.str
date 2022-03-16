@@ -1,0 +1,809 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 54391
+License: Customer
+
+Current time: 	Wed Mar 09 10:25:00 CET 2022
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.4.0-100-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :1
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 2 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/img/Vivado2018.2/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/opt/img/Vivado2018.2/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	v19nosth
+User home directory: /homes/v19nosth
+User working directory: /homes/v19nosth/ECG_medcon
+User country: 	FR
+User language: 	fr
+User locale: 	fr_FR
+
+RDI_BASEROOT: /opt/img/Vivado2018.2/Vivado
+HDI_APPROOT: /opt/img/Vivado2018.2/Vivado/2018.2
+RDI_DATADIR: /opt/img/Vivado2018.2/Vivado/2018.2/data
+RDI_BINDIR: /opt/img/Vivado2018.2/Vivado/2018.2/bin
+
+Vivado preferences file location: /homes/v19nosth/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /homes/v19nosth/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /homes/v19nosth/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/opt/img/Vivado2018.2/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/homes/v19nosth/ECG_medcon/vivado.log
+Vivado journal file location: 	/homes/v19nosth/ECG_medcon/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-54391-pc-elec-292
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/img/Vivado2018.2/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27007@licence-01.imta.fr
+XILINX_DSP: /opt/img/Vivado2018.2/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/img/Vivado2018.2/Vivado/2018.2
+XILINX_SDK: /opt/img/Vivado2018.2/SDK/2018.2
+XILINX_VIVADO: /opt/img/Vivado2018.2/Vivado/2018.2
+XILINX_VIVADO_HLS: /opt/img/Vivado2018.2/Vivado/2018.2
+
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 888 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 68 MB (+69080kb) [00:00:06]
+// [Engine Memory]: 887 MB (+778574kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 40 MB. Current time: 3/9/22 10:25:02 AM CET
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/homes/v19nosth/ECG_medcon/ECG_medcon.xpr", 0); // q (O, ck)
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /homes/v19nosth/ECG_medcon/ECG_medcon.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /homes/v19nosth/ECG_medcon/ECG_medcon.xpr 
+// [Engine Memory]: 948 MB (+16963kb) [00:06:22]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /homes/v19nosth/ECG_medcon/ECG_medcon.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/img/Vivado2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,029 MB (+35219kb) [00:06:24]
+// [GUI Memory]: 72 MB (+471kb) [00:06:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,043 MB. GUI used memory: 44 MB. Current time: 3/9/22 10:31:19 AM CET
+// Project name: ECG_medcon; location: /homes/v19nosth/ECG_medcon; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// [Engine Memory]: 1,092 MB (+12110kb) [00:06:35]
+// Elapsed time: 18 seconds
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// [GUI Memory]: 76 MB (+744kb) [00:07:05]
+// Elapsed time: 22 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ECG"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// [GUI Memory]: 81 MB (+887kb) [00:07:15]
+// Tcl Command: 'file mkdir /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new 
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "IIR"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// Elapsed time: 76 seconds
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 2 ; FIR.vhd ; xil_defaultlib ; <Local to Project>", 1, "FIR.vhd", 2, false, false, false, true, false); // bP (O, c) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // aa (aj, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CHANGE_SOURCE_PROPERTIES, "Change Source Properties..."); // ad (aj, c)
+// bg (c): Configure Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bg)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bg)
+dismissDialog("Configure Sources"); // bg (c)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// HOptionPane Error: 'Invalid file '/homes/v19nosth/ECG_medcon/FIR_129.vhd'. File does not exist. (Invalid File)'
+// Elapsed time: 24 seconds
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR_129"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR_11"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 3 ; FIR_129.vhd ; xil_defaultlib ; <Local to Project>", 2, "FIR_129.vhd", 2); // bP (O, c)
+// Elapsed time: 14 seconds
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 4 ; FIR_11.vhd ; xil_defaultlib ; <Local to Project>", 3, "FIR_11.vhd", 2); // bP (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 3 ; FIR_129.vhd ; xil_defaultlib ; <Local to Project>", 2, "xil_defaultlib", 3); // bP (O, c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", true); // g (bm, c): TRUE
+editTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "xil_defaultlib", 2, "Library", 3); // bP (O, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 209 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/IIR.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/IIR.vhd 
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd 
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd 
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd 
+// I (ck): Define Modules: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,133 MB. GUI used memory: 45 MB. Current time: 3/9/22 10:35:02 AM CET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 5, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,150 MB (+4601kb) [00:10:13]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 86 MB (+729kb) [00:10:15]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false, true, false, false, false, false); // B (D, ck) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_129.vhd]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete  project local files/directories from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {/homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd} 
+// Tcl Message: file delete -force /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FIR_11.vhd]", 3, false); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ECG.vhd]", 2, false); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,199 MB. GUI used memory: 48 MB. Current time: 3/9/22 10:35:42 AM CET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4, true, true, false, false, true, false); // B (D, ck) - Shift Key - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ECG"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR_129"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR_11"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_129.vhd 
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/ECG.vhd 
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/FIR_11.vhd 
+// I (ck): Define Modules: addNotify
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "ECG.vhd", 1); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "FIR_11.vhd", 2); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "ECG.vhd", 1); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "FIR_129.vhd", 0); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "ECG.vhd", 1); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "FIR_11.vhd", 2); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "FIR_129.vhd", 0); // L (O, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 100 MB (+10518kb) [00:11:37]
+// [Engine Memory]: 1,217 MB (+9086kb) [00:11:37]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 50 MB. Current time: 3/9/22 10:36:32 AM CET
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_129(Behavioral) (FIR_129.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_129(Behavioral) (FIR_129.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectCodeEditor("IIR.vhd", 155, 514); // ce (w, ck)
+typeControlKey((HResource) null, "IIR.vhd", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectCodeEditor("ECG.vhd", 157, 174); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 41, 52); // ce (w, ck)
+typeControlKey((HResource) null, "ECG.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 67, 191); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("ECG.vhd", 305, 304); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,283 MB (+5344kb) [00:12:11]
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("ECG.vhd", 223, 162); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 175, 134); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 211, 155); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 80, 113); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IIR(Behavioral) (IIR.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("IIR.vhd", 219, 337); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,284 MB. GUI used memory: 51 MB. Current time: 3/9/22 10:37:37 AM CET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 105 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+typeControlKey((HResource) null, "FIR_11.vhd", 'v'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_129(Behavioral) (FIR_129.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_129(Behavioral) (FIR_129.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+typeControlKey((HResource) null, "FIR_129.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(Behavioral) (FIR_11.vhd)]", 3, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("FIR_129.vhd", 102, 423); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 102, 423, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 378, 292); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operativeUNit"); // l (aQ, ck)
+selectCodeEditor("FIR_129.vhd", 130, 27, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V (aj, ck)
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ad (aj, ck)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "FIR11", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FIR_129.vhd", 161, 77); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 90, 20); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 85, 23); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 97, 24); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 97, 24, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 97, 24, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V (aj, ck)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // V (aj, ck)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // V (aj, ck)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // V (aj, ck)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V (aj, ck)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // V (aj, ck)
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ad (aj, ck)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "FIR_11", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+selectCodeEditor("FIR_129.vhd", 225, 84); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 139, 53); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 165, 53); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 165, 53); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 165, 53, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 165, 53); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 193, 61); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 95, 27); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 95, 27, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_129.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 171, 53); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 215, 51); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_129.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 287, 54); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_129.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,319 MB. GUI used memory: 55 MB. Current time: 3/9/22 10:41:12 AM CET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("FIR_129.vhd", 87, 322); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 87, 322, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_129.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 608, 297); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("FIR_129.vhd", 200, 505); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 247, 502); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_129.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,352 MB (+5777kb) [00:16:37]
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "FIR_129.vhd", 'c'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 55 MB. Current time: 3/9/22 10:41:32 AM CET
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "control_unit"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// Elapsed time: 11 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 31 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/control_unit.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/control_unit.vhd 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,385 MB. GUI used memory: 55 MB. Current time: 3/9/22 10:42:37 AM CET
+// Elapsed time: 118 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true, false, false, false, true, false); // u (O, ck) - Popup Trigger - Node
+// [GUI Memory]: 106 MB (+284kb) [00:26:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,386 MB. GUI used memory: 55 MB. Current time: 3/9/22 11:12:37 AM CET
+// Elapsed time: 1691 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IIR.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_11.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectCodeEditor("FIR_129.vhd", 24, 165); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 83, 233); // ce (w, ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("FIR_129.vhd", 87, 253); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 77, 196); // ce (w, ck)
+// [GUI Memory]: 112 MB (+1362kb) [00:52:31]
+// Elapsed time: 216 seconds
+selectCodeEditor("FIR_129.vhd", 43, 318); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 114, 374); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 64, 361); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 163, 374); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 119, 312); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("FIR_129.vhd", 119, 356); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 119, 356, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 198, 294); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 198, 294, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 155, 158); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 214, 157); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 214, 157, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 338, 153); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 338, 153, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 305, 136); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 305, 136, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 196, 146); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 196, 146, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 225, 128); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 225, 128, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 310, 123); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 310, 123, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 217, 300); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 217, 300, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 105, 152); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 105, 152, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 132, 105); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 132, 105, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("FIR_129.vhd", 117, 302); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 117, 302, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 120, 200); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 120, 200, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("FIR_129.vhd", 109, 162); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 109, 162, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 111, 212); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 127, 195); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 127, 195, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 114, 163); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 114, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 129, 210); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 129, 210, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 236, 255); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("FIR_129.vhd", 72, 174); // ce (w, ck)
+// Elapsed time: 195 seconds
+selectCodeEditor("FIR_129.vhd", 240, 248); // ce (w, ck)
+// Elapsed time: 110 seconds
+selectCodeEditor("FIR_129.vhd", 581, 276, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("FIR_129.vhd", 535, 254); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("FIR_129.vhd", 13, 160); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 4); // k (j, ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 27 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MAC"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 34 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/MAC.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /homes/v19nosth/ECG_medcon/ECG_medcon.srcs/sources_1/new/MAC.vhd 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,420 MB. GUI used memory: 53 MB. Current time: 3/9/22 11:27:17 AM CET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ECG(Behavioral) (ECG.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("ECG.vhd", 85, 163); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 84, 147); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 62, 185); // ce (w, ck)
+typeControlKey((HResource) null, "ECG.vhd", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+// [Engine Memory]: 1,420 MB (+64kb) [01:02:41]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_11.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_11.vhd", 4); // k (j, ck)
+selectCodeEditor("FIR_11.vhd", 96, 332); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operativeUnit"); // l (aQ, ck)
+selectCodeEditor("FIR_11.vhd", 142, 20); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 142, 20, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_11.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 122, 1); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_11.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_11.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_11.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_11.vhd", 'v'); // ce (w, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+selectCodeEditor("FIR_11.vhd", 431, 282); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IIR.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,452 MB. GUI used memory: 52 MB. Current time: 3/9/22 11:28:27 AM CET
+selectCodeEditor("FIR_129.vhd", 23, 128); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_129.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+selectCodeEditor("ECG.vhd", 120, 80); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 20, 79); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+selectCodeEditor("ECG.vhd", 57, 83); // ce (w, ck)
+typeControlKey((HResource) null, "ECG.vhd", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectCodeEditor("FIR_129.vhd", 84, 194); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+selectCodeEditor("ECG.vhd", 136, 136); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 11, 143); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+selectCodeEditor("ECG.vhd", 57, 186); // ce (w, ck)
+selectCodeEditor("ECG.vhd", 57, 186, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("FIR_129.vhd", 144, 302); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 144, 302, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 272, 305); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 272, 305, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 63 seconds
+selectCodeEditor("FIR_129.vhd", 73, 437); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 83, 428); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 83, 428, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_129.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_129.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_11.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_11.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 331, 312); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 46, 209); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 22, 139); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 109, 189); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 492, 247); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 218, 128); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 19, 161); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 25, 161); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 99, 146); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 534, 343); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 308, 318); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 56, 292); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 56, 292, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 98, 316); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 97, 310); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 97, 310, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 256, 313); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 339, 315); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 339, 315, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 326, 310); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 326, 310, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 13, 325); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 9, 342); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 570, 355); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 3, 170); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 230, 364); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 53, 432); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 53, 432, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 148, 429); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 148, 429); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 148, 429, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_11.vhd", 110, 347); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 119, 291); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 261, 283); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 409, 282); // ce (w, ck)
+selectCodeEditor("FIR_11.vhd", 328, 286); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ECG.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IIR.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_11.vhd", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_129.vhd", 2); // k (j, ck)
+selectCodeEditor("FIR_129.vhd", 74, 122); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 160, 205); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 172, 231); // ce (w, ck)
+// Elapsed time: 81 seconds
+selectCodeEditor("FIR_129.vhd", 173, 418); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 153, 479); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 153, 479, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 101, 469); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 101, 469, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 496, 479); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 496, 479, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 230, 473); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 230, 473, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 167, 474); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 376, 480); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 376, 480, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 385, 473); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 385, 473, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 426, 478); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 426, 478, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("FIR_129.vhd", 496, 451); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 11, 456); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 516, 455); // ce (w, ck)
+selectCodeEditor("FIR_129.vhd", 503, 446); // ce (w, ck)
+// Elapsed time: 98 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_129.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR_11(arch_FIR_11) (FIR_129.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FIR_129.vhd", 171, 101); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("FIR_129.vhd", 87, 234); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("FIR_129.vhd", 117, 118); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,480 MB. GUI used memory: 53 MB. Current time: 3/9/22 11:37:27 AM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,496 MB (+5644kb) [01:12:44]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("FIR_129.vhd", 196, 517); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 53 MB. Current time: 3/9/22 12:07:27 PM CET
